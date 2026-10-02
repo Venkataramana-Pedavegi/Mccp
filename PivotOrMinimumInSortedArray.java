@@ -14,15 +14,13 @@ public class PivotOrMinimumInSortedArray {
         sc.close();
     }
     static  int pivot (int arr[]){
-        int min=arr[0];
-        int index=0;
+        int minIndex=arr[0];
         for(int i=1;i<arr.length-1;i++){
-            if(arr[min]>arr[i]){
-                min=arr[i];
-                index=i;
+            if(arr[minIndex]>arr[i]){
+                minIndex=i;
             }
         }
-        return 0;
+        return minIndex;
     }
     
 }
